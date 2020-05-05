@@ -73,24 +73,7 @@ header {
 }
 .programs-main {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: "programs-title"
-    "online-description"
-    "in-person-description"
-    "our-programs"
-    "nsf-ps-flyer"
-    "nsf-ps-summary"
-    "enlighten-yourself-flyer"
-    "enlighten-yourself-summary"
-    "journalism-flyer"
-    "journalism-summary"
-    "history-flyer"
-    "history-summary"
-    "student-athletes-flyer"
-    "student-athletes-summary"
-    "financial-literacy-flyer"
-    "financial-literacy-summary"
-    "add-workshop";
+    grid-auto-rows: auto;;
 }
 .updates-main {
     grid-template-columns: 1fr;
