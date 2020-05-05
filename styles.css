@@ -1,0 +1,687 @@
+@font-face {
+    font-family: Lemon Milk;
+    src: url("fonts/LEMONMILK/LEMONMILK-Light.otf");
+}
+@font-face {
+    font-family: A Pompadour;
+    src: url("fonts/a_pompadour/02_APompadourTextSample.ttf");
+}
+html {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.25%;
+    margin-bottom: 0.25%;
+}
+@media screen and (min-width: 1200px) {
+    html {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+h1 {
+    font-size: 2.5em;
+    font-family: "Lemon Milk", sans-serif;
+}
+h2 {
+    font-size: 1.75em;
+    font-family: "Lemon Milk", sans-serif;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+h3 {
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", sans-serif;
+}
+p {
+    font-size: 1em;
+    font-family: "A Pompadour", sans-serif;
+    line-height: 120%;
+}
+.button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-family: "Lemon Milk", sans-serif;
+}
+@keyframes changeButtonColor {
+    from {background-color: white; color: black;}
+    to {background-color: black; color: white;}
+}
+.button:hover {
+    animation: changeButtonColor 200ms ease-in-out both;
+}
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "twodlogo about resources contact"
+    ". team programs ." ". . mediapr ." ". . partners ." " . . updates .";
+    gap: 0;
+    text-align: center;
+    background-color: white;
+    height: 6vh;
+}
+header p {
+    margin: 0.4em;
+    padding: 0.4em;
+}
+header a:link, a:visited, .dropdown-content a {
+    font-family: "Lemon Milk", sans-serif;
+    font-size: 0.8em;
+    color: gray;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header a:hover {
+    color: black;
+}
+.twodlogo {
+    grid-area: twodlogo;
+}
+.twodlogo a img {
+    height: 3.5vh;
+    object-position: left;
+}
+.about {
+    grid-area: about;
+}
+.team {
+    grid-area: team;
+}
+.resources {
+    grid-area: resources;
+}
+.programs {
+    grid-area: programs;
+}
+.mediapr {
+    grid-area: mediapr;
+}
+.partners {
+    grid-area: partners;
+}
+.updates {
+    grid-area: updates;
+}
+.contact {
+    grid-area: contact;
+}
+@media screen and (min-device-width: 480px) {
+.header-phone {
+    display: none;
+}
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+@keyframes showDropdown {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: showDropdown 500ms ease-in-out both;
+}}
+.centered-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    display: block;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "footer-icon-caption" "footer-icons" "footer-message";
+    font-size: 0.8em;
+}
+@media screen and (min-width: 900px) {
+    footer {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+footer .footer-icon-caption {
+    grid-area: footer-icon-caption;
+}
+footer .footer-icons {
+    grid-area: footer-icons;
+    object-fit: contain;
+}
+footer .footer-message {
+    grid-area: footer-message;
+}
+footer .footer-message .footer-disclaimer {
+    font-size: 0.75em;
+    color: gray;
+}
+.yt-icon, .fb-icon, .messenger-icon, .insta-icon {
+    height: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+main {
+    grid-area: main;
+    margin: 0 auto;
+    border-bottom: 0.05em solid black;
+}
+/*hmpg styles*/
+.hmpg-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+    gap: 0.5em;
+    grid-template-areas:
+    "hmpg-title hmpg-title hmpg-title"
+    "hmpg-intro-video hmpg-intro-video hmpg-intro-video"
+    "hmpg-about-summary hmpg-about-image hmpg-about-image"
+    "hmpg-vision-image hmpg-vision-image hmpg-vision-summary"
+    "hmpg-wwd hmpg-wwd hmpg-wwd"
+    "hmpg-programs-title hmpg-updates-title hmpg-resources-title"
+    "hmpg-programs-image hmpg-updates-image hmpg-resources-image"
+    "hmpg-programs-summary hmpg-updates-summary hmpg-resources-summary";
+}
+@media screen and (max-width: 600px) {
+    .hmpg-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas:
+        "hmpg-title"
+        "hmpg-intro-video"
+        "hmpg-about-image" "hmpg-about-summary"
+        "hmpg-vision-image" "hmpg-vision-summary"
+        "hmpg-wwd"
+        "hmpg-programs-title" "hmpg-programs-image" "hmpg-programs-summary"
+        "hmpg-updates-title" "hmpg-updates-image" "hmpg-updates-summary"
+        "hmpg-resources-title" "hmpg-resources-image" "hmpg-resources-summary";
+    }
+}
+.hmpg-title {
+    grid-area: hmpg-title;
+    text-align: center;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 0.05em solid black;
+}
+.hmpg-intro-video {
+    grid-area: hmpg-intro-video;
+    border-bottom: 0.05em solid black;
+    padding-bottom: 2em;
+}
+.hmpg-intro-video iframe {
+    width: 80vw;
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+@media screen and (min-width: 1200px) {
+    header {
+        justify-items: center;
+    }
+    .hmpg-intro-video iframe {
+        width: 960px;
+        height: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.hmpg-about-image img:hover, .hmpg-vision-image img:hover, .hmpg-programs-image img:hover, .hmpg-updates-image img:hover, .hmpg-resources-image img:hover {
+    opacity: 80%;
+}
+.hmpg-about-summary {
+    grid-area: hmpg-about-summary;
+}
+.hmpg-about-summary p, .hmpg-vision-summary p {
+    text-align: justify;
+}
+.hmpg-about-image {
+    grid-area: hmpg-about-image;
+}
+.hmpg-vision-summary {
+    grid-area: hmpg-vision-summary;
+}
+.hmpg-vision-image {
+    grid-area: hmpg-vision-image;
+}
+.hmpg-wwd {
+    grid-area: hmpg-wwd;
+    text-align: center;
+    border-top: 0.05em solid black;
+}
+.hmpg-programs-title {
+    grid-area: hmpg-programs-title;
+    text-align: center;
+}
+.hmpg-programs-image {
+    grid-area: hmpg-programs-image;
+}
+.hmpg-programs-summary {
+    grid-area: hmpg-programs-summary;
+    text-align: center;
+}
+.hmpg-updates-title {
+    grid-area: hmpg-updates-title;
+    text-align: center;
+}
+.hmpg-updates-image {
+    grid-area: hmpg-updates-image;
+}
+.hmpg-updates-summary {
+    grid-area: hmpg-updates-summary;
+    text-align: center;
+}
+.hmpg-resources-title {
+    grid-area: hmpg-resources-title;
+    text-align: center;
+}
+.hmpg-resources-image {
+    grid-area: hmpg-resources-image;
+}
+.hmpg-resources-summary {
+    grid-area: hmpg-resources-summary;
+    text-align: center;
+}
+/*about styles*/
+.about-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    grid-template-areas:
+    "about-title about-title"
+    "about-talking-image about-summary";
+}
+@media screen and (max-width: 600px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "about-title"
+        "about-talking-image"
+        "about-summary";
+    }
+}
+.about-title {
+    grid-area: about-title;
+    text-align: center;
+}
+.about-summary {
+    grid-area: about-summary;
+    text-align: justify;
+}
+.about-summary button, .add-team button, .add-workshop button, .add-partners button {
+    margin-bottom: 1em;
+}
+/*team styles*/
+.team-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas:
+    "team-title team-title"
+    "aniruth-image surya-image"
+    "aniruth-summary surya-summary"
+    "add-team add-team";
+}
+@media screen and (max-width: 600px) {
+    .team-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "team-title"
+        "aniruth-image" "aniruth-summary"
+        "surya-image" "surya-summary"
+        "add-team";
+    }
+}
+.team-title {
+    grid-area: team-title;
+}
+.aniruth-image {
+    grid-area: aniruth-image;
+}
+.aniruth-summary {
+    grid-area: aniruth-summary;
+    padding: 1em auto 1em auto;
+}
+.surya-image {
+    grid-area: surya-image;
+}
+.surya-summary {
+    grid-area: surya-summary;
+}
+.add-team {
+    grid-area: add-team;
+    border-top: 0.05em solid black;
+}
+/*resources styles*/
+.resources-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas: 
+    "resources-title resources-title resources-title"
+    "ps-workshop-vid ps-workshop-vid ps-workshop-resources"
+    "resources-websites resources-websites resources-websites";
+}
+@media screen and (max-width: 800px) {
+    .resources-main {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "resources-title"
+        "ps-workshop-vid"
+        "ps-workshop-resources"
+        "resources-websites";
+    }
+}
+.resources-title {
+    grid-area: resources-title;
+}
+.ps-workshop-vid {
+    grid-area: ps-workshop-vid;
+    padding-top: 56.25%;
+    position: relative;
+}
+.ps-workshop-vid iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ps-workshop-resources {
+    grid-area: ps-workshop-resources;
+}
+.ps-workshop-resources p {
+    text-align: justify;
+}
+.resources-websites {
+    grid-area: resources-websites;
+    border-top: 0.05em solid black;
+}
+/*programs styles*/
+.programs-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas: "programs-title programs-title programs-title programs-title programs-title programs-title"
+    "online-description online-description online-description in-person-description in-person-description in-person-description"
+    "our-programs our-programs our-programs our-programs our-programs our-programs"
+    "nsf-ps-flyer nsf-ps-flyer enlighten-yourself-flyer enlighten-yourself-flyer ournalism-flyer journalism-flyer"
+    "nsf-ps-summary nsf-ps-summary enlighten-yourself-summary enlighten-yourself-summary journalism-summary journalism-summary"
+    "history-flyer history-flyer student-athletes-flyer student-athletes-flyer financial-literacy-flyer financial-literacy-flyer"
+    "history-summary history-summary student-athletes-summary student-athletes-summary financial-literacy-summary financial-literacy-summary"
+    "add-workshop add-workshop add-workshop add-workshop add-workshop add-workshop";
+}
+@media screen and (max-width: 900px) {
+    .programs-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: "programs-title programs-title"
+        "online-description in-person-description"
+        "our-programs our-programs"
+        "nsf-ps-flyer enlighten-yourself-flyer"
+        "nsf-ps-summary enlighten-yourself-summary"
+        "journalism-flyer history-flyer"
+        "journalism-summary history-summary"
+        "student-athletes-flyer financial-literacy-flyer"
+        "student-athletes-summary financial-literacy-summary"
+        "add-workshop add-workshop";
+    }
+}
+@media screen and (max-width: 600px) {
+    .programs-main {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: "programs-title"
+        "online-description"
+        "in-person-description"
+        "our-programs"
+        "nsf-ps-flyer"
+        "nsf-ps-summary"
+        "enlighten-yourself-flyer"
+        "enlighten-yourself-summary"
+        "journalism-flyer"
+        "journalism-summary"
+        "history-flyer"
+        "history-summary"
+        "student-athletes-flyer"
+        "student-athletes-summary"
+        "financial-literacy-flyer"
+        "financial-literacy-summary"
+        "add-workshop";
+    }
+}
+.programs-title {
+    grid-area: programs-title;
+}
+.online-description {
+    grid-area: online-description;
+}
+.in-person-description {
+    grid-area: in-person-description;
+}
+.our-programs {
+    grid-area: our-programs;
+    border-top: 0.05em solid black;
+}
+.nsf-ps-flyer {
+    grid-area: nsf-ps-flyer;
+}
+.nsf-ps-summary {
+    grid-area: nsf-ps-summary;
+}
+.enlighten-yourself-flyer {
+    grid-area: enlighten-yourself-flyer;
+}
+.enlighten-yourself-summary {
+    grid-area: enlighten-yourself-summary;
+}
+.journalism-flyer {
+    grid-area: journalism-flyer;
+}
+.journalism-summary {
+    grid-area: journalism-summary;
+}
+.history-flyer {
+    grid-area: history-flyer;
+}
+.history-summary {
+    grid-area: history-summary;
+}
+.student-athletes-flyer {
+    grid-area: student-athletes-flyer;
+}
+.student-athletes-summary {
+    grid-area: student-athletes-summary;
+}
+.financial-literacy-flyer {
+    grid-area: financial-literacy-flyer;
+}
+.financial-literacy-summary {
+    grid-area: financial-literacy-summary;
+}
+.add-workshop {
+    grid-area: add-workshop;
+    border-top: 0.05em solid black;
+}
+/*mediapr styles*/
+.mediapr-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas: "mediapr-title"
+    "nsf-ps-description"
+    "nsf-ps-fb-post"
+    "nssa-journalism-description"
+    "nssa-journalism-fb-post";
+}
+@media screen and (min-width: 1200px) {
+    .mediapr-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: "mediapr-title mediapr-title"
+        "nsf-ps-description nssa-journalism-description"
+        "nsf-ps-fb-post nssa-journalism-fb-post";
+    }
+}
+.mediapr-title {
+    grid-area: mediapr-title;
+}
+.nsf-ps-fb-post {
+    grid-area: nsf-ps-fb-post;
+}
+.nssa-journalism-fb-post {
+    grid-area: nssa-journalism-fb-post;
+}
+/*partners styles*/
+.partners-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas: "partners-title partners-title"
+    "org-corp-heading donors-heading"
+    "org-corp-list donors-list"
+    "add-partners add-partners";
+}
+@media screen and (max-width: 600px) {
+    .partners-main {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: "partners-title"
+        "org-corp-heading"
+        "org-corp-list"
+        "donors-heading"
+        "donors-list"
+        "add-partners";
+    }
+}
+.partners-title {
+    grid-area: partners-title;
+}
+.org-corp-heading {
+    grid-area: org-corp-heading;
+}
+.org-corp-list {
+    grid-area: org-corp-list;
+}
+.donors-heading {
+    grid-area: donors-heading;
+}
+.donors-list {
+    grid-area: donors-list;
+}
+.add-partners {
+    grid-area: add-partners;
+    border-top: 0.05em solid black;
+}
+/*updates styles*/
+.updates-main {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    gap: 0.5em;
+    text-align: center;
+    grid-auto-rows: auto;
+    grid-template-areas: "updates-title updates-title updates-title"
+    "updates-nav-bar update-mcnichols-title update-mcnichols-image"
+    "updates-nav-bar update-enlighten-yourself-title update-enlighten-yourself-image";
+}
+@media screen and (max-width: 700px) {
+    .updates-main {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: "updates-title"
+        "updates-nav-bar"
+        "update-mcnichols-title" 
+        "update-mcnichols-image"
+        "update-enlighten-yourself-title"
+        "update-enlighten-yourself-image";
+    }
+}
+.updates-image {
+    width: 75%;
+}
+.updates-title {
+    grid-area: updates-title;
+}
+.updates-nav-bar {
+    grid-area: updates-nav-bar;
+}
+.update-mcnichols-title {
+    grid-area: update-mcnichols-title;
+}
+.update-mcnichols-image {
+    grid-area: update-mcnichols-image;
+}
+.update-mcnichols-title, .update-enlighten-yourself-title {
+    border-top: 0.05em solid black;
+}
+.update-enlighten-yourself-title {
+    grid-area: update-enlighten-yourself-title;
+}
+.update-enlighten-yourself-image {
+    grid-area: update-enlighten-yourself-image;
+}
+/*contact styles*/
+.contact-main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    text-align: center;
+    grid-template-areas: "contact-title" "contact-summary" "contact-additional-info";
+}
+.contact-main a {
+    text-decoration: underline;
+}
+.contact-title {
+    grid-area: contact-title;
+}
+.contact-summary {
+    grid-area: contact-summary;
+}
+.contact-additional-info {
+    grid-area: contact-additional-info;
+    border-top: 0.05em solid black;
+}
+main a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+main a:hover {
+    color: grey;
+}
