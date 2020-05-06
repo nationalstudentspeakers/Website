@@ -81,17 +81,6 @@ header p {
     margin: 0.4em;
     padding: 0.4em;
 }
-header a:link, a:visited, .dropdown-content a {
-    font-family: "Lemon Milk", sans-serif;
-    font-size: 0.8em;
-    color: gray;
-    text-decoration: none;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-header a:hover {
-    color: black;
-}
 .twodlogo {
     grid-area: twodlogo;
 }
@@ -684,4 +673,15 @@ main a:link, a:visited {
 }
 main a:hover {
     color: grey;
+}
+header a:link, a:visited, .dropdown-content a {
+    font-family: "Lemon Milk", sans-serif;
+    font-size: 0.8em;
+    color: gray;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header a:hover {
+    color: black;
 }
