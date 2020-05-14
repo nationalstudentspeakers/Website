@@ -471,6 +471,11 @@ main {
         "add-workshop";
     }
 }
+.program-summary p {
+    text-align: justify;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
 .programs-title {
     grid-area: programs-title;
 }
@@ -654,9 +659,6 @@ main {
     text-align: center;
     grid-template-areas: "contact-title" "contact-summary" "contact-additional-info";
 }
-.contact-main a {
-    text-decoration: underline;
-}
 .contact-title {
     grid-area: contact-title;
 }
@@ -674,7 +676,7 @@ main a:link, a:visited {
 main a:hover {
     color: grey;
 }
-header a:link, a:visited, .dropdown-content a {
+header a:link, header a:visited, header .dropdown-content a {
     font-family: "Lemon Milk", sans-serif;
     font-size: 0.8em;
     color: gray;
