@@ -687,3 +687,6 @@ header a:link, header a:visited, header .dropdown-content a {
 header a:hover {
     color: black;
 }
+.missing-page-main {
+    text-align: center;
+}
