@@ -28,7 +28,7 @@ header {
     display: none;
 }
 .twodlogo a img {
-    object-position: left;
+    height: 44px;
 }
 .hmpg-main {
     grid-template-columns: 1fr;
