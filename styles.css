@@ -662,10 +662,13 @@ main {
     grid-auto-rows: auto;
     gap: 2em;
     text-align: center;
-    grid-template-areas: "contact-title" "contact-summary" "contact-additional-info";
+    grid-template-areas: "contact-title" "contact-image" "contact-summary" "contact-additional-info";
 }
 .contact-title {
     grid-area: contact-title;
+}
+.contact-image {
+    grid-area: contact-image;
 }
 .contact-summary {
     grid-area: contact-summary;
