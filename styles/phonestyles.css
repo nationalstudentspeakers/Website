@@ -38,10 +38,9 @@ main {
 }
 .hmpg-main {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(16, auto);
+    grid-auto-rows: auto;
     grid-template-areas:
     "hmpg-title"
-    "hmpg-intro-video"
     "hmpg-about-image" "hmpg-idea-summary"
     "hmpg-vision-image" "hmpg-vision-summary"
     "hmpg-explore"
@@ -62,6 +61,7 @@ main {
     grid-auto-rows: auto;
     grid-template-areas:
     "about-title"
+    "about-intro-video"
     "idea-image"
     "idea-summary"
     "restructuring-image"

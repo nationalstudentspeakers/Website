@@ -202,11 +202,10 @@ main {
 .hmpg-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-auto-rows: auto;
     gap: 2em;
     grid-template-areas:
     "hmpg-title hmpg-title hmpg-title"
-    "hmpg-intro-video hmpg-intro-video hmpg-intro-video"
     "hmpg-idea-summary hmpg-about-image hmpg-about-image"
     "hmpg-vision-image hmpg-vision-image hmpg-vision-summary"
     "hmpg-explore hmpg-explore hmpg-explore"
@@ -217,10 +216,8 @@ main {
 @media (max-width: 700px) {
     .hmpg-main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(16, auto);
         grid-template-areas:
         "hmpg-title"
-        "hmpg-intro-video"
         "hmpg-about-image" "hmpg-idea-summary"
         "hmpg-vision-image" "hmpg-vision-summary"
         "hmpg-explore"
@@ -238,11 +235,6 @@ main {
 .hmpg-title h1 {
     text-align: justify;
     margin-left: 39%;
-}
-.hmpg-intro-video {
-    grid-area: hmpg-intro-video;
-    border-bottom: 0.05em solid black;
-    padding-bottom: 2em;
 }
 .hmpg-about-image img:hover, .hmpg-vision-image img:hover, .hmpg-chapters-image img:hover, .hmpg-updates-image img:hover, .hmpg-partners-image img:hover {
     opacity: 80%;
@@ -312,6 +304,7 @@ main {
     gap: 2em;
     grid-template-areas:
     "about-title about-title"
+    "about-intro-video about-intro-video"
     "idea-image idea-summary"
     "restructuring-summary restructuring-image"
     "mission-image mission-statement"
@@ -324,6 +317,7 @@ main {
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
         "about-title"
+        "about-intro-video"
         "idea-image"
         "idea-summary"
         "restructuring-image"
@@ -340,6 +334,11 @@ main {
 }
 .about-title {
     grid-area: about-title;
+}
+.about-intro-video {
+    grid-area: about-intro-video;
+    border-bottom: 0.05em solid black;
+    padding-bottom: 1em;
 }
 .idea-image {
     grid-area: idea-image;
@@ -626,7 +625,7 @@ header a:hover {
     grid-template-columns: 1fr;
     gap: 2em;
     grid-auto-rows: auto;
-    grid-template-areas: "chapters-header" "chapters-map" "add-chapter";
+    grid-template-areas: "chapters-header" "chapters-map" "chapters-list" "add-chapter";
 }
 .chapters-main h1, .chapters-main h3, .chapters-main p, .chapters-main a {
     text-align: center;
@@ -637,6 +636,7 @@ header a:hover {
         grid-auto-rows: auto;
         grid-template-areas: "chapters-header"
         "chapters-map"
+        "chapters-list"
         "add-chapter";
     }
 }
@@ -645,6 +645,10 @@ header a:hover {
 }
 .chapters-map {
     grid-area: chapters-map;
+}
+.chapters-list {
+    grid-area: chapters-list;
+    border-top: 0.05em solid black;
 }
 .add-chapter {
     grid-area: add-chapter;
