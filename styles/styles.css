@@ -574,11 +574,11 @@ main {
 /*contact styles*/
 .contact-main {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     gap: 2em;
     text-align: center;
-    grid-template-areas: "contact-title" "contact-image" "contact-executive" "contact-chapters" "contact-additional-info";
+    grid-template-areas: "contact-title contact-title" "contact-image contact-executive" "contact-image contact-chapters" "contact-additional-info contact-additional-info";
 }
 .contact-title {
     grid-area: contact-title;
@@ -699,6 +699,21 @@ header a:hover {
 }
 
 /*start chapter styles*/
+.start-chapter-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    text-align: center;
+    grid-auto-rows: auto;
+    grid-template-areas: "start-chapter-header" "start-chapter-form";
+}
+.start-chapter-header {
+    grid-area: start-chapter-header;
+}
+.start-chapter-form {
+    grid-area: start-chapter-form;
+}
+
 
 /*location styles*/
 .location-main {
@@ -750,8 +765,7 @@ header a:hover {
     text-align: center;
     grid-auto-rows: auto;
     grid-template-areas: "resources-nav-bar resources-header"
-    "resources-nav-bar resources-videos-list"
-    "resources-nav-bar resources-websites";
+    "resources-nav-bar resources-videos-list";
 }
 @media (max-width: 700px) {
     .resources-main {
@@ -759,8 +773,7 @@ header a:hover {
         grid-auto-rows: auto;
         grid-template-areas: "resources-header"
         "resources-nav-bar"
-        "resources-videos-list"
-        "resources-websites";
+        "resources-videos-list";
     }
 }
 .resources-header {
@@ -790,10 +803,6 @@ header a:hover {
 }
 .workshop-resources p {
     text-align: justify;
-}
-.resources-websites {
-    grid-area: resources-websites;
-    border-top: 0.05em solid black;
 }
 .resources-nav-bar {
     grid-area: resources-nav-bar;
