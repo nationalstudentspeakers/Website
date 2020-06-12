@@ -104,3 +104,7 @@ main {
 .video-left, .video-right {
     grid-template-areas: "workshop-video" "workshop-resources";
 }
+.officers-list {
+    grid-template-columns: 1fr;
+    grid-template-areas: "president-pic" "president-bio" "vp-pic" "vp-bio" "secretary-pic" "secretary-bio";
+}

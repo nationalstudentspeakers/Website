@@ -906,6 +906,24 @@ header a:hover {
     text-align: center;
     grid-auto-rows: auto;
 }
+.president-pic {
+    grid-area: president-pic;
+}
+.president-bio {
+    grid-area: president-bio;
+}
+.vp-pic {
+    grid-area: vp-pic;
+}
+.vp-bio {
+    grid-area: vp-bio;
+}
+.secretary-pic {
+    grid-area: secretary-pic;
+}
+.secretary-bio {
+    grid-area: secretary-bio;
+}
 .officers-side-bar {
     position: sticky;
     top: 2em;
