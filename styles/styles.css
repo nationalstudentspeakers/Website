@@ -366,9 +366,11 @@ main {
 }
 .online-description {
     grid-area: online-description;
+    text-align: justify;
 }
 .in-person-description {
     grid-area: in-person-description;
+    text-align: justify;
 }
 .add-team button, .add-workshop button, .add-partners button, .add-chapter button {
     margin-bottom: 1em;
