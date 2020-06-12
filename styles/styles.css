@@ -905,6 +905,7 @@ header a:hover {
     gap: 2em;
     text-align: center;
     grid-auto-rows: auto;
+    grid-template-areas: "president-pic vp-pic secretary-pic" "president-bio vp-bio secretary-bio";
 }
 .president-pic {
     grid-area: president-pic;
