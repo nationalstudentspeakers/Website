@@ -598,9 +598,8 @@ main {
     grid-area: contact-additional-info;
     border-top: 0.05em solid black;
 }
-main a:link, a:visited {
+main a:link, main a:visited {
     color: black;
-    text-decoration: none;
 }
 main a:hover {
     color: grey;
@@ -678,7 +677,7 @@ header a:hover {
     position: absolute;
     margin-top: 0;
     margin-left: -50%;
-    background-color: gray;
+    background-color: lightgray;
     opacity: 0;
 }
 .marker-text p {
@@ -694,10 +693,10 @@ header a:hover {
     to {opacity: 1;}
 }
 .marker-text a {
-    color: white;
+    color: white !important;
 }
 .marker-text a:hover {
-    color: black;
+    color: black !important;
 }
 
 /*start chapter styles*/
