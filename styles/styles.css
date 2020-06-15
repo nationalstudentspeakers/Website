@@ -860,6 +860,9 @@ header a:hover {
 .programs-header {
     grid-area: programs-header;
 }
+.program .flyer {
+    box-shadow: 0 0 4px 4px lightgray;
+}
 .add-workshop {
     grid-area: add-workshop;
     border-top: 0.05em solid black;
