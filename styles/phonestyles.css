@@ -89,6 +89,9 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: "contact-title" "contact-image" "contact-executive" "contact-chapters" "contact-additional-info";
 }
+.start-chapter-header img {
+    width: 100%;
+}
 .location-header h1 {
     margin-top: 0.67em;
 }

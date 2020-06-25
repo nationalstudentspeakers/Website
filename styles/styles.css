@@ -718,6 +718,11 @@ header a:hover {
 .start-chapter-form {
     grid-area: start-chapter-form;
 }
+.start-chapter-header img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*location styles*/
