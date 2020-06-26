@@ -372,7 +372,7 @@ main {
     grid-area: in-person-description;
     text-align: justify;
 }
-.add-team button, .add-workshop button, .add-partners button, .add-chapter button {
+.add-team button, .add-workshop button, .add-partners button, .add-chapter button, .link-apply-chapter-officer button {
     margin-bottom: 1em;
 }
 /*team styles*/
@@ -626,20 +626,10 @@ header a:hover {
     grid-template-columns: 1fr;
     gap: 2em;
     grid-auto-rows: auto;
-    grid-template-areas: "chapters-header" "chapters-map" "chapters-list" "add-chapter";
+    grid-template-areas: "chapters-header" "chapters-map" "chapters-list" "add-chapter" "apply-chapter-officer";
 }
 .chapters-main h1, .chapters-main h3, .chapters-main p, .chapters-main a {
     text-align: center;
-}
-@media (max-width: 700px) {
-    .chapters-main {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        grid-template-areas: "chapters-header"
-        "chapters-map"
-        "chapters-list"
-        "add-chapter";
-    }
 }
 .chapters-header {
     grid-area: chapters-header;
@@ -654,6 +644,10 @@ header a:hover {
 .add-chapter {
     grid-area: add-chapter;
     text-align: center;
+    border-top: 0.05em solid black;
+}
+.apply-chapter-officer {
+    grid-area: apply-chapter-officer;
     border-top: 0.05em solid black;
 }
 .chapters-map {
@@ -892,7 +886,8 @@ header a:hover {
     text-align: center;
     grid-auto-rows: auto;
     grid-template-areas: "officers-nav-bar officers-header"
-    "officers-nav-bar officers-list";
+    "officers-nav-bar officers-list"
+    "officers-nav-bar link-apply-chapter-officer";
 }
 @media (max-width: 700px) {
     .officers-main {
@@ -900,7 +895,8 @@ header a:hover {
         grid-auto-rows: auto;
         grid-template-areas: "officers-header"
         "officers-nav-bar"
-        "officers-list";
+        "officers-list"
+        "link-apply-chapter-officer";
     }
 }
 .officers-header {
@@ -917,6 +913,10 @@ header a:hover {
     text-align: center;
     grid-auto-rows: auto;
     grid-template-areas: "president-pic vp-pic secretary-pic" "president-bio vp-bio secretary-bio";
+}
+.link-apply-chapter-officer {
+    grid-area: link-apply-chapter-officer;
+    border-top: 0.05em solid black;
 }
 .president-pic {
     grid-area: president-pic;
