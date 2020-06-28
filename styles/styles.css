@@ -718,6 +718,13 @@ header a:hover {
     margin-right: auto;
 }
 
+/*terms and conditions styles*/
+.terms-main h1, .terms-main h3 {
+    text-align: center;
+}
+.terms-main p {
+    text-align: justify;
+}
 
 /*location styles*/
 .location-main {
