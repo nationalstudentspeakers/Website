@@ -54,24 +54,32 @@ p {
 figure {
     margin: 0;
 }
-.button {
+button {
     background-color: white;
     border: 1px solid black;
     color: black;
-    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin: 2px 2px;
     cursor: pointer;
-    font-size: 1.3em;
+    display: inline-block;
     font-family: "Lemon Milk", sans-serif;
+    margin: 2px 2px;
+}
+.button {
+    padding: 10px 10px;
+    font-size: 1.3em;
+}
+.resource-vid-button {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 1em;
 }
 @keyframes changeButtonColor {
     from {background-color: white; color: black;}
     to {background-color: black; color: white;}
 }
-.button:hover {
+.button:hover, .resource-vid-button:hover {
     animation: changeButtonColor 200ms ease-in-out both;
 }
 header {
@@ -798,7 +806,12 @@ header a:hover {
     gap: 2em;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 0.05em solid black;
+}
+.resource-video .video-buttons {
+    margin-top: 1em;
 }
 .video-left {
     grid-template-areas: "workshop-video workshop-video workshop-resources";
