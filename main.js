@@ -16,3 +16,10 @@ function changeVid(URL, video) {
     var resourceVideo = document.getElementById(video);
     resourceVideo.src = videoURL;
 }
+
+function changeSlides(pdf, title, link, button) {
+    var resourceButton = document.getElementById(button);
+    var resourceLink = document.getElementById(link);
+    resourceButton.innerText = title;
+    resourceLink.href = pdf;
+}
