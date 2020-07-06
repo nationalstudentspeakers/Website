@@ -699,10 +699,10 @@ header a:hover {
     to {opacity: 1;}
 }
 .marker-text a {
-    color: white !important;
+    color: black !important;
 }
 .marker-text a:hover {
-    color: black !important;
+    color: gray !important;
 }
 
 /*start chapter styles*/
