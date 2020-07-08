@@ -221,7 +221,7 @@ main {
     "hmpg-chapters-image hmpg-updates-image hmpg-partners-image"
     "hmpg-chapters-summary hmpg-updates-summary hmpg-partners-summary";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .hmpg-main {
         grid-template-columns: minmax(0,1fr);
         grid-template-areas:
@@ -319,7 +319,7 @@ main {
     "programs-description programs-description"
     "online-description in-person-description";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .about-main {
         grid-template-columns: minmax(0,1fr);
         grid-template-rows: repeat(3, auto);
@@ -407,7 +407,7 @@ main {
     grid-auto-rows: auto;
     grid-template-areas: "ceo-pic cfo-pic coo-pic" "ceo-bio cfo-bio coo-bio" "cmo-pic cpo-pic advisor-pic" "cmo-bio cpo-bio advisor-bio";
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .executive-list {
         grid-template-columns: repeat(2, minmax(0,1fr));
         grid-template-areas:
@@ -458,23 +458,23 @@ main {
 /*mediapr styles*/
 .mediapr-main {
     display: grid;
-    grid-template-columns: minmax(0,1fr);
     grid-auto-rows: auto;
     gap: 2em;
     text-align: center;
-    grid-template-areas: "mediapr-title"
-    "nsf-ps-description"
-    "nsf-ps-fb-post"
-    "nssa-journalism-description"
-    "nssa-journalism-fb-post";
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-auto-rows: auto;
+    grid-template-areas: "mediapr-title mediapr-title"
+    "nsf-ps-description nssa-journalism-description"
+    "nsf-ps-fb-post nssa-journalism-fb-post";
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .mediapr-main {
-        grid-template-columns: repeat(2, minmax(0,1fr));
-        grid-auto-rows: auto;
-        grid-template-areas: "mediapr-title mediapr-title"
-        "nsf-ps-description nssa-journalism-description"
-        "nsf-ps-fb-post nssa-journalism-fb-post";
+        grid-template-columns: minmax(0,1fr);
+        grid-template-areas: "mediapr-title"
+        "nsf-ps-description"
+        "nsf-ps-fb-post"
+        "nssa-journalism-description"
+        "nssa-journalism-fb-post";
     }
 }
 .mediapr-title {
@@ -498,7 +498,7 @@ main {
     "org-corp-list donors-list"
     "add-partners add-partners";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .partners-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
@@ -539,7 +539,7 @@ main {
     grid-template-areas: "updates-header updates-header"
     "updates-nav-bar posts";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .updates-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
@@ -745,7 +745,7 @@ header a:hover {
     "location-nav-bar location-header"
     "location-nav-bar location-info";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .location-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
@@ -810,7 +810,7 @@ header a:hover {
 .video-right {
     grid-template-areas: "workshop-resources workshop-video workshop-video";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .resources-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
@@ -853,7 +853,7 @@ header a:hover {
     "programs-nav-bar programs-list"
     "programs-nav-bar add-workshop";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .programs-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
@@ -876,7 +876,7 @@ header a:hover {
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .programs-list {
         grid-template-columns: minmax(0,1fr);
     }
@@ -915,7 +915,7 @@ header a:hover {
     "officers-nav-bar officers-list"
     "officers-nav-bar link-apply-chapter-officer";
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .officers-main {
         grid-template-columns: minmax(0,1fr);
         grid-auto-rows: auto;
