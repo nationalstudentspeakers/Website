@@ -30,23 +30,9 @@ header {
 .twodlogo a img {
     height: 44px;
 }
-main {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-.hmpg-main {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "hmpg-title"
-    "hmpg-about-image" "hmpg-idea-summary"
-    "hmpg-vision-image" "hmpg-vision-summary"
-    "hmpg-explore"
-    "hmpg-chapters-title" "hmpg-chapters-image" "hmpg-chapters-summary"
-    "hmpg-updates-title" "hmpg-updates-image" "hmpg-updates-summary"
-    "hmpg-partners-title" "hmpg-partners-image" "hmpg-partners-summary";
+main, footer {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 .hmpg-title {
     grid-template-columns: minmax(0, 1fr);
@@ -59,7 +45,7 @@ main {
     text-align: center;
 }
 .about-main {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
     "about-title"
     "about-intro-video"
