@@ -77,6 +77,18 @@ main, footer {
     grid-template-columns: 1fr;
     grid-template-areas: "contact-title" "contact-image" "contact-executive" "contact-chapters" "contact-additional-info";
 }
+.chapters-main {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.chapters-header, .chapters-map, .chapters-list, .add-chapter {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.apply-chapter-officer {
+    grid-area: apply-chapter-officer;
+    border-top: 0.05em solid black;
+}
 .start-chapter-header img {
     width: 100%;
 }
