@@ -247,7 +247,6 @@ main {
 }
 .hmpg-title {
     grid-area: hmpg-title;
-    height: calc(100vh - 50px);
     text-align: center;
     border-bottom: 0.05em solid black;
     display: grid;
