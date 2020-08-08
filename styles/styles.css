@@ -633,7 +633,7 @@ main {
     grid-auto-rows: auto;
     gap: 2em;
     text-align: center;
-    grid-template-areas: "contact-title contact-title" "contact-image contact-executive" "contact-image contact-chapters" "contact-additional-info contact-additional-info";
+    grid-template-areas: "contact-title contact-title" "contact-image contact-executive" "contact-additional-info contact-additional-info";
 }
 .contact-title {
     grid-area: contact-title;
@@ -643,9 +643,6 @@ main {
 }
 .contact-executive {
     grid-area: contact-executive;
-}
-.contact-chapters {
-    grid-area: contact-chapters;
 }
 .contact-additional-info {
     grid-area: contact-additional-info;

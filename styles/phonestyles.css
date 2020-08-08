@@ -75,7 +75,7 @@ main, footer {
 }
 .contact-main {
     grid-template-columns: 1fr;
-    grid-template-areas: "contact-title" "contact-image" "contact-executive" "contact-chapters" "contact-additional-info";
+    grid-template-areas: "contact-title" "contact-image" "contact-executive" "contact-additional-info";
 }
 .chapters-main {
     margin-right: 1em;
