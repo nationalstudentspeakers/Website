@@ -119,7 +119,7 @@ ScrollTrigger.create({
     animation: animationFromRight2
 });
 
-/*const timelineVariable7 = gsap.timeline();
+const timelineVariable7 = gsap.timeline();
 
 const animationFromDown2 = timelineVariable7.from(".anim-from-down2", {
     yPercent: 20,
@@ -133,4 +133,65 @@ start: 20% top,
 ScrollTrigger.create({
     trigger: '.anim-from-down2',
     animation: animationFromDown2
-});*/
+});
+
+const timelineVariable8 = gsap.timeline();
+
+const animationFromDown3 = timelineVariable8.from(".anim-from-down3", {
+    yPercent: 20,
+    opacity: 0,
+    delay: 1,
+    duration: 1,
+start: 20% top,
+    stagger: 0.5
+});
+
+ScrollTrigger.create({
+    trigger: '.anim-from-down3',
+    animation: animationFromDown3
+});
+
+const timelineVariable9 = gsap.timeline();
+
+const animationFromLeft3 = timelineVariable9.from(".anim-from-left3", {
+    xPercent: -20,
+    opacity: 0,
+    duration: 1,
+start: 20% top,
+    stagger: 0.5
+});
+
+ScrollTrigger.create({
+    trigger: '.anim-from-left3',
+    animation: animationFromLeft3
+});
+
+const timelineVariable10 = gsap.timeline();
+
+const animationFromRight3 = timelineVariable10.from(".anim-from-right3", {
+    xPercent: 20,
+    opacity: 0,
+    duration: 1,
+start: 20% top,
+    stagger: 0.5
+});
+
+ScrollTrigger.create({
+    trigger: '.anim-from-right3',
+    animation: animationFromRight3
+});
+
+const timelineVariable11 = gsap.timeline();
+
+const animationFromLeft4 = timelineVariable11.from(".anim-from-left4", {
+    xPercent: -20,
+    opacity: 0,
+    duration: 1,
+start: 20% top,
+    stagger: 0.5
+});
+
+ScrollTrigger.create({
+    trigger: '.anim-from-left4',
+    animation: animationFromLeft4
+});
