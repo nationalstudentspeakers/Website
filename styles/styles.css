@@ -112,7 +112,7 @@ header p {
     height: 40px;
     object-position: left;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 2em;
 }
 .about {
     grid-area: about;
@@ -719,6 +719,14 @@ header a:hover {
 .tampa {
     top: 82.5%;
     left: 79.5%;
+}
+.moline {
+    top: 36%;
+    left: 61%;
+}
+.raleigh {
+    top: 53%;
+    left: 84%;
 }
 .marker-text {
     display: none;

@@ -195,3 +195,18 @@ ScrollTrigger.create({
     trigger: '.anim-from-left4',
     animation: animationFromLeft4
 });
+
+const timelineVariable12 = gsap.timeline();
+
+const animationFromDownNoStagger = timelineVariable12.from(".anim-from-down-no-stagger", {
+    yPercent: 20,
+    opacity: 0,
+    delay: 1,
+    duration: 2.25,
+    start: 20% top
+});
+
+ScrollTrigger.create({
+    trigger: '.anim-from-down-no-stagger',
+    animation: animationFromDownNoStagger
+});
