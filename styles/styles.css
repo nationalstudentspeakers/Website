@@ -728,6 +728,10 @@ header a:hover {
     top: 53%;
     left: 84%;
 }
+.cleveland {
+    top: 33.5%;
+    left: 76.5%;
+}
 .marker-text {
     display: none;
     position: absolute;
