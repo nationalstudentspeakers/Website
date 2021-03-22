@@ -992,7 +992,7 @@ header a:hover {
     gap: 2em;
     text-align: center;
     grid-auto-rows: auto;
-    grid-template-areas: "president-pic vp-pic secretary-pic" "president-bio vp-bio secretary-bio";
+    grid-template-areas: "president-pic vp-pic secretary-pic" "president-bio vp-bio secretary-bio" "media-manager-pic outreach-manager-pic ." "media-manager-bio outreach-manager-bio .";
 }
 .link-apply-chapter-officer {
     grid-area: link-apply-chapter-officer;
@@ -1015,6 +1015,18 @@ header a:hover {
 }
 .secretary-bio {
     grid-area: secretary-bio;
+}
+.media-manager-pic {
+    grid-area: media-manager-pic;
+}
+.media-manager-bio {
+    grid-area: media-manager-bio;
+}
+.outreach-manager-pic {
+    grid-area: outreach-manager-pic;
+}
+.outreach-manager-bio {
+    grid-area: outreach-manager-bio;
 }
 .officers-side-bar {
     position: sticky;

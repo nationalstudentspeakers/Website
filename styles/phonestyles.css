@@ -111,5 +111,5 @@ main, footer {
 }
 .officers-list {
     grid-template-columns: 1fr;
-    grid-template-areas: "president-pic" "president-bio" "vp-pic" "vp-bio" "secretary-pic" "secretary-bio";
+    grid-template-areas: "president-pic" "president-bio" "vp-pic" "vp-bio" "secretary-pic" "secretary-bio" "media-manager-pic" "media-manager-bio" "outreach-manager-pic" "outreach-manager-bio";
 }
