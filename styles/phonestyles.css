@@ -44,12 +44,6 @@ footer {
 .hmpg-title-description h3 {
     font-size: 2.5em;
 }
-.hmpg-idea-summary,
-.hmpg-vision-summary,
-.hmpg-idea-summary p,
-.hmpg-vision-summary p {
-    text-align: center;
-}
 .about-main {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
