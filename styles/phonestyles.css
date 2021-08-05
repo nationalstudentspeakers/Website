@@ -30,7 +30,8 @@ header {
 .twodlogo a img {
     height: 44px;
 }
-main, footer {
+main,
+footer {
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -43,23 +44,26 @@ main, footer {
 .hmpg-title-description h3 {
     font-size: 2.5em;
 }
-.hmpg-idea-summary, .hmpg-vision-summary, .hmpg-idea-summary p, .hmpg-vision-summary p {
+.hmpg-idea-summary,
+.hmpg-vision-summary,
+.hmpg-idea-summary p,
+.hmpg-vision-summary p {
     text-align: center;
 }
 .about-main {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
-    "about-title"
-    "about-intro-video"
-    "idea-image"
-    "idea-summary"
-    "restructuring-image"
-    "restructuring-summary"
-    "mission-statement"
-    "mission-image"
-    "programs-description"
-    "online-description"
-    "in-person-description";
+        "about-title"
+        "about-intro-video"
+        "idea-image"
+        "idea-summary"
+        "restructuring-image"
+        "restructuring-summary"
+        "mission-statement"
+        "mission-image"
+        "programs-description"
+        "online-description"
+        "in-person-description";
 }
 .executive-list {
     grid-template-columns: 1fr;
@@ -67,9 +71,10 @@ main, footer {
 }
 .updates-main {
     grid-template-columns: 1fr;
-    grid-template-areas: "updates-header"
-    "updates-nav-bar"
-    "posts";
+    grid-template-areas:
+        "updates-header"
+        "updates-nav-bar"
+        "posts";
 }
 .updates-post {
     grid-template-columns: 1fr;
@@ -83,7 +88,10 @@ main, footer {
     margin-right: 1em;
     margin-left: 1em;
 }
-.chapters-header, .chapters-map, .chapters-list, .add-chapter {
+.chapters-header,
+.chapters-map,
+.chapters-list,
+.add-chapter {
     margin-right: 1em;
     margin-left: 1em;
 }
@@ -99,14 +107,16 @@ main, footer {
 }
 .resources-main {
     grid-template-columns: 1fr;
-    grid-template-areas: "resources-header"
-    "resources-nav-bar"
-    "resources-videos-list";
+    grid-template-areas:
+        "resources-header"
+        "resources-nav-bar"
+        "resources-videos-list";
 }
 .resource-video {
     grid-template-columns: 1fr;
 }
-.video-left, .video-right {
+.video-left,
+.video-right {
     grid-template-areas: "workshop-video" "workshop-resources";
 }
 .officers-list {
