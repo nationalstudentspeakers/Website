@@ -30,7 +30,7 @@ html {
     overflow-x: 0;
 }
 @media screen and (min-width: 1200px) {
-    html {
+    body {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -476,17 +476,12 @@ main {
 .executive-list {
     grid-area: executive-list;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    margin: auto;
     gap: 2em;
     text-align: center;
     grid-auto-rows: auto;
-    grid-template-areas: "ceo-pic cfo-pic coo-pic" "ceo-bio cfo-bio coo-bio" "cmo-pic cpo-pic advisor-pic" "cmo-bio cpo-bio advisor-bio";
-}
-@media screen and (max-width: 800px) {
-    .executive-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-areas: "ceo-pic cfo-pic" "ceo-bio cfo-bio" "coo-pic cmo-pic" "coo-bio cmo-bio" "cpo-pic advisor-pic" "cpo-bio advisor-bio";
-    }
+    grid-template-areas: "ceo-pic cfo-pic" "ceo-bio cfo-bio" "cmo-pic advisor-pic" "cmo-bio advisor-bio";
 }
 .ceo-pic {
     grid-area: ceo-pic;

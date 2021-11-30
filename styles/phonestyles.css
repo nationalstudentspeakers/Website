@@ -61,7 +61,7 @@ footer {
 }
 .executive-list {
     grid-template-columns: 1fr;
-    grid-template-areas: "ceo-pic" "ceo-bio" "cfo-pic" "cfo-bio" "coo-pic" "coo-bio" "cmo-pic" "cmo-bio" "cpo-pic" "cpo-bio" "advisor-pic" "advisor-bio";
+    grid-template-areas: "ceo-pic" "ceo-bio" "cfo-pic" "cfo-bio" "cmo-pic" "cmo-bio" "advisor-pic" "advisor-bio";
 }
 .updates-main {
     grid-template-columns: 1fr;
