@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: Lemon Milk;
     src: url("../fonts/LEMONMILK/LEMONMILK-Light.otf");
 }
@@ -767,9 +767,25 @@ header a:hover {
     top: 53%;
     left: 84%;
 }
+.charlotte {
+    top: 56%;
+    left: 81%;
+}
 .cleveland {
     top: 33.5%;
     left: 76.5%;
+}
+.durham {
+ top: 51.5%;
+ left: 81.5%;
+}
+.edison {
+ top: 33.5%;
+ left: 90%;
+}
+.dallas {
+ top: 68%;
+ left: 50%;
 }
 .marker-text {
     display: none;
