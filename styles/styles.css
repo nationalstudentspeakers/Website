@@ -787,6 +787,10 @@ header a:hover {
  top: 69.5%;
  left: 50%;
 }
+.chapel_hill {
+    top: 52%;
+    left: 83%;
+   }
 .marker-text {
     display: none;
     position: absolute;
